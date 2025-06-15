@@ -1,72 +1,61 @@
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9fb;
-  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 header {
   text-align: center;
-  background-color: #1e1e2f;
-  color: white;
-  padding: 10px 0;
+  padding: 20px;
 }
 .logo {
-  height: 40px;
-  margin-top: 10px;
+  width: 60px;
 }
-.bottom-nav {
+.nav-tabs {
   display: flex;
-  justify-content: center;
-  background-color: #111;
+  justify-content: space-around;
+  background: #222;
   padding: 10px 0;
 }
-.bottom-nav a {
-  color: #aaa;
-  margin: 0 15px;
+.nav-tabs a {
+  color: #bbb;
   text-decoration: none;
-  font-weight: bold;
 }
-.bottom-nav a.active {
+.nav-tabs a.active {
   color: #fff;
-  border-bottom: 2px solid #fff;
+  font-weight: bold;
 }
 main {
   padding: 20px;
 }
-.hero {
-  text-align: center;
+.cards, .tiles {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
   margin-bottom: 20px;
 }
-.recommendations {
-  margin-top: 20px;
-}
-.track-list .track {
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-  border: 1px solid #ddd;
+.card, .tile {
+  background: #333;
   padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 100px;
+}
+.card img {
+  width: 100%;
   border-radius: 6px;
-  margin-bottom: 10px;
-}
-.track button {
-  background: #1e90ff;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.track button:hover {
-  background: #0d74d1;
 }
 .player {
   text-align: center;
-  margin-top: 30px;
 }
-button {
-  padding: 10px 20px;
-  margin-top: 10px;
+.track-buttons button {
+  margin: 10px 5px;
+  padding: 10px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }

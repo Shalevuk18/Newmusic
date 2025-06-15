@@ -5,5 +5,5 @@ function playTrack(src) {
   player.play();
 }
 function toggleFrequency() {
-  alert("Frequency toggled (432Hz / 528Hz simulation)");
+  alert("Frequency toggled (432Hz / 528Hz simulated)");
 }
