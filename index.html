@@ -3,14 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>New Music</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
   <header>
-    <h1>New Music</h1>
-    <nav>
+    <img src="media/logo.png" alt="New Music Logo" class="logo" />
+    <nav class="bottom-nav">
       <a href="#" class="active">Home</a>
       <a href="#">Library</a>
       <a href="#">Search</a>
@@ -18,15 +19,21 @@
     </nav>
   </header>
   <main>
-    <section class="playlist">
-      <h2>Recommended for You</h2>
-      <div class="track">
-        <span>🎵 Song Title 1</span>
-        <button onclick="playTrack('music/sample1.mp3')">Play</button>
-      </div>
-      <div class="track">
-        <span>🎵 Song Title 2</span>
-        <button onclick="playTrack('music/sample2.mp3')">Play</button>
+    <section class="hero">
+      <h1>Welcome to New Music</h1>
+      <p>High-vibe audio. Real frequencies. Pure listening.</p>
+    </section>
+    <section class="recommendations">
+      <h2>Suggested Tracks</h2>
+      <div class="track-list">
+        <div class="track">
+          <span>🎵 Track One</span>
+          <button onclick="playTrack('music/sample1.mp3')">▶️</button>
+        </div>
+        <div class="track">
+          <span>🎵 Track Two</span>
+          <button onclick="playTrack('music/sample2.mp3')">▶️</button>
+        </div>
       </div>
     </section>
     <section class="player">
