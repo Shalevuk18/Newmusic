@@ -1,25 +1,38 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Music</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
     <h1>New Music</h1>
-    <p>Powered by 432Hz / 528Hz frequency conversion</p>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Library</a>
+      <a href="#">Search</a>
+      <a href="#">Settings</a>
+    </nav>
   </header>
   <main>
-    <div class="player">
-      <audio id="audioPlayer" controls>
-        <source src="music/sample-track.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+    <section class="playlist">
+      <h2>Recommended for You</h2>
+      <div class="track">
+        <span>🎵 Song Title 1</span>
+        <button onclick="playTrack('music/sample1.mp3')">Play</button>
+      </div>
+      <div class="track">
+        <span>🎵 Song Title 2</span>
+        <button onclick="playTrack('music/sample2.mp3')">Play</button>
+      </div>
+    </section>
+    <section class="player">
+      <audio id="audioPlayer" controls></audio>
       <button onclick="toggleFrequency()">Toggle Frequency</button>
-    </div>
+    </section>
   </main>
   <script src="js/app.js"></script>
 </body>

@@ -1,4 +1,9 @@
 
+function playTrack(src) {
+  const player = document.getElementById("audioPlayer");
+  player.src = src;
+  player.play();
+}
 function toggleFrequency() {
-  alert('Simulating 432Hz/528Hz frequency shift (for demonstration only).');
+  alert("Simulated switch to 432Hz/528Hz (actual processing requires backend engine).");
 }

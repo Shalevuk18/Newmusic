@@ -1,20 +1,41 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  background-color: #fff;
   margin: 0;
   padding: 0;
-  text-align: center;
+  color: #222;
 }
 header {
-  background: #222;
+  background-color: #111;
   color: white;
-  padding: 20px 0;
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #aaa;
+}
+nav a.active {
+  font-weight: bold;
+  color: white;
+}
+main {
+  padding: 20px;
+}
+.playlist .track {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f2f2f2;
+  border-radius: 4px;
 }
 .player {
-  margin: 40px auto;
-}
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 30px;
+  text-align: center;
 }
